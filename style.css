@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Neonderthaw&family=Quicksand:wght@300..700&family=Story+Script&family=Tilt+Neon&display=swap');
+
+:root {
+  --bg-color: darkblue;
+  --txt-color: white;
+  --accent-color: skyblue;
+  --accent-link: green;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Story Script", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--txt-color);
+  background-color: var(--bg-color);
+}
+
+@keyframes shadows {
+ 0% { text-shadow: #00FFFF 0 0 18px; }
+ 50% { text-shadow: #2EFFFF 0 0 20px; }
+ 75% { text-shadow: #8AFFFF 0 0 22px;}
+ 100% { text-shadow: #2EFFFF 0 0 18px; }
+}
+
+h1 {
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  font-size: 10.5vw;
+/*   text-transform: uppercase; */
+	color: white;
+ 	animation: shadows 3s infinite
+}
+
+h2 {
+  color: var(--accent-color);
+}
+
+figure {
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+  border: 1px solid;
+}
+
+figcaption {
+  font-size: small;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+}
+
+article {
+  padding: 1.5em;
+}
+
+article p {
+  margin-top: 0.75em;
+  text-align: justify;
+}
+
+article h2,
+p {
+  width: 75%;
+  margin: auto;
+}
+
+#learn {
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+}
+
+#learn a {
+  color: var(--accent-link);
+  text-decoration: none;
+}
+
+#learn a:hover {
+  text-decoration: underline;
+}
+
+#learn a:visited {
+}
+
+@media (width >= 800px) {
+  h1 {
+    font-size: 5.5em;
+  }
+
+  figure,
+  article h2,
+  p {
+    width: 600px;
+  }
+}
